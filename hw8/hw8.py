@@ -19,7 +19,7 @@ def programm(dictionary):
 Подсказка:", dictionary[key]," ...")
     guess = input("Загаданное слово: ")
     while guess.lower() != key and tries < len(dictionary[key])-1:       
-        print("Ответ неправильный,но еще", len(dictionary[key])-1-tries, "попыток.")
+        print("Ответ неправильный.")
         guess = input("Загаданное слово: ")
         tries += 1
     if tries == len(dictionary[key])-1:
