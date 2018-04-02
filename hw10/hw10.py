@@ -12,7 +12,7 @@ def openfile():
             
 def write(year):
     with open("./text.txt", "w", encoding="utf-8") as t:
-        result = "Год основания:" + year
+        result = "Год основания: " + year
         t.write(result)
         
 write(openfile())
