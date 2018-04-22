@@ -8,7 +8,7 @@ def search():
     for folder in os.listdir():
         if os.path.isdir(folder):
             dirpath, filename = os.path.split(folder)
-            r = re.search('[a-zA-Z0-9]|[,—\[\]↑№!\"\'«»?.,;:-|/+*{}<>@#$%-^&()]', filename)
+            r = re.search("[a-zA-Z0-9]|[,—\[\]↑№!\"\'«»?.,;:-|/+*{}<>@#$%-^&()]", filename)
             if not r:
                 folders.append(filename)
     return folders
